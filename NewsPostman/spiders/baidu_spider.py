@@ -13,11 +13,11 @@ class BaiduSpider(scrapy.Spider):
         filename = f'Baidu.html'
         news_title_list = response.xpath('//div[@class="c-single-text-ellipsis"]/text()').getall()
         for news_title in news_title_list:
-            news_title = news_title[:2] # baidu title begin with two space
+            news_title = news_title[2:] # baidu title begin with two space
             yield NewspostmanItem(
                 title = news_title,
                 url = '',
                 hot_index = 0,
-                category = '',
+                category = 'baidu',
                 descrip = ''
             )

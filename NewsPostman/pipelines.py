@@ -5,11 +5,11 @@
 
 
 # useful for handling different item types with a single interface
-from itemadapter import ItemAdapter
+
 from NewsPostman.items import NewspostmanItem
 
 
 class NewspostmanPipeline:
-    def process_item(self, item, BaiduSpider):
-        print()
+    def process_item(self, item, spider):
+        # TODO: To store the data to json
         return item
