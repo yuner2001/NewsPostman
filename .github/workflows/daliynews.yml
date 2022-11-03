@@ -16,3 +16,5 @@ jobs:
       # install the old version
       - run: python crawl.py
       - run: python send.py
+      - run: git status
+      - run: ls - l
