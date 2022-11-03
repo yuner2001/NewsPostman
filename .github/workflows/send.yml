@@ -1,0 +1,18 @@
+name: send
+
+on: [push]
+#  schedule:
+#    - cron: '*/15 * * * *'  #every 15 minite we crawl
+
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+      - run: git pull origin main
+      - run: python send.py
+
+# - run: python send.py

@@ -13,8 +13,7 @@ jobs:
         with:
           python-version: '3.8'
       - run: pip install -r requirements.txt
-      # install the old version
-      - run: python crawl.py
-      - run: python send.py
-      - run: git status
       - run: git pull origin main
+      - run: python crawl.py
+      - run: git push origin main
+      
