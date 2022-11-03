@@ -11,8 +11,10 @@ jobs: # 要执行的任务，可以时多个
     steps:
       - uses: actions/checkout@v2
       - name: setup python 3.8
-        use: actions/setup-python@v2
+        uses: actions/setup-python@v2
         with: 
           python-version: 3.8
       - name: insatll env
         run: pip insatll requirements.txt
+      - name: report  
+      run: echo 'Successful install the Env'
