@@ -14,7 +14,5 @@ jobs:
           python-version: '3.8'
       - run: pip install -r requirements.txt
       # install the old version
-      - run: pip uninstall pyOpenSSL==22.1.0
-      - run: pip install pyOpenSSL==22.0.0
       - run: python crawl.py
       - run: python send.py
