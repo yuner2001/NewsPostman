@@ -27,7 +27,7 @@ if __name__ == '__main__':
     print('sending...')  
     news_email = NewsEmail(
         user = 'DaliyNews@163.com',
-        pwd = '',
+        pwd = 'AUBPTLDNZENUNXIU',
         send = 'DaliyNews@163.com',
         receiver_list = receive_list,
         content = paper.get_content()
