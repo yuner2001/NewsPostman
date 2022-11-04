@@ -13,6 +13,8 @@ jobs:
         with:
           python-version: '3.8'
       - run: pip install -r requirements.txt
+      - run: git config --global user.email "3298520845@qq.com"
+      - run: git config --global user.name "yuner2001"
       - run: git pull origin main
       - run: python crawl.py
       - run: git add *
