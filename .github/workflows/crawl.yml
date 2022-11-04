@@ -15,5 +15,7 @@ jobs:
       - run: pip install -r requirements.txt
       - run: git pull origin main
       - run: python crawl.py
+      - run: git add *
+      - run: git commit -m 'sipder commit'
       - run: git push origin main
       
