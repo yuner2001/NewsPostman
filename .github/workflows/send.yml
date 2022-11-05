@@ -1,8 +1,8 @@
 name: send
 
-on: [push]
-  # schedule:
-  #   - cron:  '0 0 * * *'
+on:
+  schedule:
+    - cron:  '0 0 * * *'
 
 jobs:
   send-news-email:
@@ -14,5 +14,3 @@ jobs:
           python-version: '3.8'
       - run: git pull origin main
       - run: python send.py
-
-# - run: python send.py

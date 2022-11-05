@@ -1,8 +1,8 @@
 name: crawl 
 
-on: [push]
-#  schedule:
-#    - cron: '*/15 * * * *'  #every 15 minite we crawl
+on:
+  schedule:
+    - cron: '*/15 * * * *'  # we crawl the data for each 15 minite
 
 jobs:
   crawl-news:

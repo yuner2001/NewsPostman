@@ -6,7 +6,8 @@ from paper import Paper
 
 paper = Paper()
 receive_list = [
-        'NewsPostman@163.com'
+        'NewsPostman@163.com',
+        'salhe@qq.com'
     ]
 
 
